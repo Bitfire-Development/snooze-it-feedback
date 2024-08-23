@@ -1,5 +1,9 @@
 labels: []
 body:
+  - type: markdown
+    attributes:
+      value: |
+        # Describe the issue
   - type: textarea
     id: actualIssue
     attributes:
