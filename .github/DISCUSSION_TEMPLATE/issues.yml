@@ -7,14 +7,14 @@ body:
   - type: textarea
     id: actualIssue
     attributes:
-      label: The issue
+      label: What is the issue?
       description: "Please give a clear description of the issue you are experiencing."
     validations:
       required: true
   - type: textarea
     id: reproSteps
     attributes:
-      label: How to reproduce the issue
+      label: How can I reproduce this issue?
       description: "Please give an extensive, step-by-step instruction on what I need to do to see the issue myself"
       value: |
         1. Open the app
@@ -30,8 +30,8 @@ body:
   - type: input
     id: statistics-id
     attributes:
-      label: Statistics Id
-      description: Please enter your statistics id (Home screen side menu -> Statistics -> Your statistics identifier)
+      label: Please enter your statistics id
+      description: This allows me to view analytics and internal error reports coming from your device. You can find it under 'Statistics' -> 'Your statistics identifier' in the home screen side menu.
     validations:
       required: true
   - type: input
