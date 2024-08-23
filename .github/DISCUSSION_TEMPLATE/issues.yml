@@ -5,50 +5,68 @@ body:
       value: |
         This is text that will show up in the template!
   - type: textarea
-    id: improvements
+    id: actualIssue
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
+      label: The issue
+      description: "Please give a clear description of the issue you are experiencing."
+    validations:
+      required: true
+  - type: textarea
+    id: reproSteps
+    attributes:
+      label: How to reproduce the issue
+      description: "Please give an extensive, step-by-step instruction on what I need to do to see the issue myself"
       value: |
-        1.
-        2.
-        3.
-        ...
-      render: bash
+        1. Open the app
+        2. Open a reminder for editing
+        3. ...
     validations:
       required: true
   - type: markdown
     attributes:
       value: |
-        ## Markdown header
-        And some more markdown
+        # Some quick questions
+        _These questions help me find the issue _
   - type: input
-    id: has-id
+    id: statistics-id
     attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+      label: Statistics Id
+      description: Please enter your statistics id (Home screen side menu -> Statistics -> Your statistics identifier)
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Which version of Snooze It do you use?
+      description: You can find it by tapping 'About' in the home screen side menu
+      options:
+        - Only happened once
+        - It occurs occasionally
+        - It occurs frequently
+        - It occurs every time / constantly
     validations:
       required: true
   - type: dropdown
-    id: download
+    id: frequency
     attributes:
-      label: Which area of this project could be most improved?
+      label: How often does this issue occur?
       options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
+        - Only happened once
+        - It occurs occasionally
+        - It occurs frequently
+        - It occurs every time / constantly
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
+    id: effect-on-usage
     attributes:
-      label: Check that box!
+      label: How does this issue effect your use of the app?
       options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+        - I can still use the app as I did before
+        - There are one or more features I cannot use
+        - The app works, but is unreliable 
+        - The app is barely usable
+        - I cannot use the app at all
+    validations:
+      required: true
+
