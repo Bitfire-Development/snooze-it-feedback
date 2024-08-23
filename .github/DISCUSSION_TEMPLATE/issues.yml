@@ -34,7 +34,8 @@ body:
     id: app-version
     attributes:
       label: Which version of Snooze It do you use?
-      description: You can find it by tapping 'About' in the home screen side menu
+      description: You can find the version number by tapping 'About' in the home screen side menu
+      hint: v1.0
     validations:
       required: true
   - type: dropdown
