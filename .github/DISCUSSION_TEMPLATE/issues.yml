@@ -22,7 +22,7 @@ body:
     attributes:
       value: |
         # Some quick questions
-        _These questions help me find the issue _
+        _These questions help me find the issue faster_
   - type: input
     id: statistics-id
     attributes:
